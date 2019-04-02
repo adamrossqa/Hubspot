@@ -37,7 +37,7 @@ public class ContactsPage extends TestBase {
         return driver.getTitle();
     }
 
-    public void clickCreateContact() {
+    public void clickCreateContactButton() {
         buttonCreateContact.click();
     }
 
@@ -57,35 +57,35 @@ public class ContactsPage extends TestBase {
         buttonAllContacts.click();
     }
 
-    public void clickButtonName() {
+    public void clickNameButton() {
         buttonName.click();
     }
 
-    public void clickButtonEmail() {
+    public void clickEmailButton() {
         buttonEmail.click();
     }
 
-    public void clickButtonPhoneNumber() {
+    public void clickPhoneNumberButton() {
         buttonPhoneNumber.click();
     }
 
-    public void clickButtonContactOwner() {
+    public void clickContactOwnerButton() {
         buttonContactOwner.click();
     }
 
-    public void clickButtonLastActivityDate() {
+    public void clickLastActivityDateButton() {
         buttonLastActivityDate.click();
     }
 
-    public void clickButtonLastContacted() {
+    public void clickLastContactedButton() {
         buttonLastContacted.click();
     }
 
-    public void clickButtonLeadStatus() {
+    public void clickLeadStatusButton() {
         buttonLeadStatus.click();
     }
 
-    public void clickButtonCreateDate() {
+    public void clickCreateDateButton() {
         buttonCreateDate.click();
     }
 }
