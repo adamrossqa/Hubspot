@@ -17,31 +17,77 @@ public class ContactsPage extends TestBase {
     @FindBy(xpath = "//a[contains(@class,'private-link uiLinkWithoutUnderline uiLinkDark f')]")
     WebElement buttonAllContacts;
     @FindBy(xpath = "(//span[@class='private-table-sort-toggle__inner'])[1]")
-    WebElement tableSortLinkName;
+    WebElement buttonName;
     @FindBy(xpath = "(//span[@class='private-table-sort-toggle__inner'])[2]")
-    WebElement tableSortLinkEmail;
+    WebElement buttonEmail;
     @FindBy(xpath = "(//span[@class='private-table-sort-toggle__inner'])[3]")
-    WebElement tableSortLinkPhoneNumber;
+    WebElement buttonPhoneNumber;
     @FindBy(xpath = "(//span[@class='private-table-sort-toggle__inner'])[4]")
-    WebElement tableSortLinkContactOwner;
+    WebElement buttonContactOwner;
     @FindBy(xpath = "(//span[@class='private-table-sort-toggle__inner'])[5]")
-    WebElement tableSortLinkLastActivityDate;
+    WebElement buttonLastActivityDate;
     @FindBy(xpath = "(//span[@class='private-table-sort-toggle__inner'])[6]")
-    WebElement tableSortLinkLastContacted;
+    WebElement buttonLastContacted;
     @FindBy(xpath = "(//span[@class='private-table-sort-toggle__inner'])[7]")
-    WebElement tableSortLinkLeadStatus;
+    WebElement buttonLeadStatus;
     @FindBy(xpath = "(//span[@class='private-table-sort-toggle__inner'])[8]")
-    WebElement tableSortLinkCreateDate;
-
+    WebElement buttonCreateDate;
 
     public String contactsPageTitleVerification() {
         return driver.getTitle();
-
     }
-    public void clickCreateContact(){
+
+    public void clickCreateContact() {
         buttonCreateContact.click();
     }
 
+    public void clickActionButton() {
+        buttonActionsDropDown.click();
+    }
+
+    public void clickImportButton() {
+        buttonImport.click();
+    }
+
+    public void clickSearchContactsForm() {
+        searchContactsInputForm.click();
+    }
+
+    public void clickAllContactsButton() {
+        buttonAllContacts.click();
+    }
+
+    public void clickButtonName() {
+        buttonName.click();
+    }
+
+    public void clickButtonEmail() {
+        buttonEmail.click();
+    }
+
+    public void clickButtonPhoneNumber() {
+        buttonPhoneNumber.click();
+    }
+
+    public void clickButtonContactOwner() {
+        buttonContactOwner.click();
+    }
+
+    public void clickButtonLastActivityDate() {
+        buttonLastActivityDate.click();
+    }
+
+    public void clickButtonLastContacted() {
+        buttonLastContacted.click();
+    }
+
+    public void clickButtonLeadStatus() {
+        buttonLeadStatus.click();
+    }
+
+    public void clickButtonCreateDate() {
+        buttonCreateDate.click();
+    }
 }
 
 
