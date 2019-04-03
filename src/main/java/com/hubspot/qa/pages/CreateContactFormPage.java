@@ -22,4 +22,30 @@ public class CreateContactFormPage extends TestBase {
     WebElement createAndAddAnotherButton;
     @FindBy(xpath = " //button[contains(@class,'uiButton private-button private-button--default private-button--secondary private-button--n')]")
     WebElement cancelButton;
+    @FindBy(xpath = "//span[@class='private-dropdown__item__label']")
+    WebElement noOwnerDropDownMenueOption;
+
+    public void createContact(String eml, String fName, String lName, String jTitle) {
+        email.sendKeys(eml);
+        firstName.sendKeys(fName);
+        lastName.sendKeys(lName);
+        jobTitle.sendKeys(jTitle);
+
+    }
+    public ContactsPage clickCreateContact() {
+        createContactButton.click();
+        return new ContactsPage();
+    }
+    public CreateContactFormPage clickCreateAndAddAnotherButton() {
+        createAndAddAnotherButton.click();
+        return new CreateContactFormPage();
+    }
+    public ContactsPage ClickCancelButton() {
+        cancelButton.click();
+        return new ContactsPage();
+    }
+    public void dropDownMenue() {
+        contactOwnerDropDown.click();
+        noOwnerDropDownMenueOption.click();
+    }
 }
